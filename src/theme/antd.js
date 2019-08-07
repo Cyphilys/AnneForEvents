@@ -16,7 +16,7 @@ module.exports = {
   // warning state color
   "@warning-color": "#faad14",
   // error state color
-  "@error-color": "#f5222d",
+  "@error-color": "#ffffff",
   //major text font size
   "@font-size-base": "16px",
   // heading text color

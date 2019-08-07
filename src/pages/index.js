@@ -3,7 +3,6 @@ import { Link, graphql, useStaticQuery } from "gatsby"
 import { Carousel } from "antd"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => (
@@ -53,7 +52,6 @@ const IndexPage = ({ data }) => (
         consulter.<br/>
       </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

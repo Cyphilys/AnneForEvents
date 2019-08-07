@@ -12,7 +12,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 //import Header from "./header"
 //import "./layout.css"
 
-import { Layout, Menu } from "antd"
+import { Layout, Menu, Icon, Typography } from "antd"
 import Logo from "../components/logo"
 
 const { Header, Content, Footer } = Layout
@@ -30,12 +30,15 @@ const Glayout = ({ children, page }) => {
     }
   `)
 
+const { Text, Title } = Typography;
+
   return (
-    <Layout style={{ minHeight: '100vh' }}>
+    <Layout style={{ minHeight: '100vh', background: "rgb(255, 255, 255)" }}>
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%', background: '#FFF' }}>
         <div className="ant-col-6">
-          <a href="/">
-            <Logo/>
+          <a>
+            <Link to="/">
+              <Logo/></Link>
           </a>
         </div>
         <div className="ant-col-18 ">
@@ -76,10 +79,48 @@ const Glayout = ({ children, page }) => {
           </Menu>
         </div>
       </Header>
-      <Content style={{ marginTop: '60px' }}>
+      <Content style={{ marginTop: '60px',marginLeft: "50px", marginRight: "50px" }}>
         <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>{children}</div>
       </Content>
-      <Footer style={{ textAlign: 'center' }}>AnneForEvents ©2019 Created by Mickaël Kerkhove</Footer>
+      <Footer style={{ background: '#313131'}}>
+        <div style={{ paddingLeft: "2.5rem"}} className="ant-col-8">
+          <div>
+            <Text strong type={"danger"}>Contact</Text>
+          </div>
+          <br/>
+          <div>
+            <Text type={"danger"}>Anne-Marie Dérozier</Text><br/>
+            <Text type={"danger"}>Tel: 06.24.78.82.03</Text><br/>
+            <Link to="/about">Contactez-moi</Link>
+            <br/>
+            <br/>
+            <Text type={"danger"}>@2019 Copyright</Text>
+          </div>
+        </div>
+        <div style={{ paddingLeft: "2.5rem"}} className="ant-col-8">
+          <div>
+            <Text strong type={"danger"}>Liens</Text>
+          </div>
+          <br/>
+          <div>
+            <Text type={"danger"}><Link to="/">Accueil</Link></Text><br/>
+            <Text type={"danger"}><Link to="/">Prestations artistiques</Link></Text><br/>
+            <Text type={"danger"}><Link to="/">Location animaux</Link></Text><br/>
+            <Text type={"danger"}><Link to="/about">Qui sommes-nous ?</Link></Text><br/>
+          </div>
+        </div>
+        <div style={{ paddingLeft: "2.5rem"}} className="ant-col-8">
+          <div>
+            <Text strong type={"danger"}>Réseaux sociaux</Text>
+          </div>
+          <br/>
+          <div>
+            <Icon type="facebook" theme="filled" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/>
+            <Icon type="instagram" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/>
+            <Icon type="twitter" style={{ fontSize: '35px', color: '#009ACD'}}/>
+          </div>
+        </div>
+      </Footer>
     </Layout>
   )
 }
