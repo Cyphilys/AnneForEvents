@@ -76,7 +76,7 @@ const Glayout = ({ children, page }) => {
           </Menu>
         </div>
       </Header>
-      <Content style={{ marginTop: '50px' }}>
+      <Content style={{ marginTop: '60px' }}>
         <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>{children}</div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>AnneForEvents ©2019 Created by Mickaël Kerkhove</Footer>

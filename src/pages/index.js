@@ -11,7 +11,7 @@ const IndexPage = ({ data }) => (
     <SEO title="Accueil" />
     <p style={{fontStyle: "italic", textAlign: "center"}}>"Ce qui touche le cœur se grave dans la mémoire."<br/>
     - Voltaire</p>
-    <Carousel autoplay>
+    <Carousel autoplay effect="fade">
       <div>
         <img src="https://www.mariage.com/prestataire-mariage/wp-content/uploads/sites/2/2015/10/21-05-481.jpg" height="500px" width="100%" alt="HTML5 Doctor Logo" />
       </div>
