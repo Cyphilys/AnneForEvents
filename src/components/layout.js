@@ -33,12 +33,12 @@ const Glayout = ({ children, page }) => {
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%', background: '#FFF' }}>
-        <div className="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-5 ant-col-lg-5 ant-col-xl-5 ant-col-xxl-4">
+        <div className="ant-col-6">
           <a href="/">
             <Logo/>
           </a>
         </div>
-        <div className="ant-col ant-col-xs-0 ant-col-sm-0 ant-col-md-19 ant-col-lg-19 ant-col-xl-19 ant-col-xxl-20">
+        <div className="ant-col-18 ">
           <Menu
             theme="light"
             mode="horizontal"
