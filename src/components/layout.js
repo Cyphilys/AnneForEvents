@@ -115,9 +115,9 @@ const { Text, Title } = Typography;
           </div>
           <br/>
           <div>
-            <Icon type="facebook" theme="filled" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/>
-            <Icon type="instagram" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/>
-            <Icon type="twitter" style={{ fontSize: '35px', color: '#009ACD'}}/>
+            <a href="https://www.facebook.com/" ><Icon type="facebook" theme="filled" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/></a>
+            <a href="https://www.instagram.com/?hl=fr" ><Icon type="instagram" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/></a>
+            <a href="https://twitter.com/?lang=fr" ><Icon type="twitter" style={{ fontSize: '35px', color: '#009ACD'}}/></a>
           </div>
         </div>
       </Footer>
