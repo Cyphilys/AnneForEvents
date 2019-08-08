@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql} from "gatsby"
-import { Carousel } from "antd"
+import { Carousel, Row, Col } from "antd"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -26,32 +26,38 @@ const IndexPage = ({ data }) => (
       </div>
     </Carousel>
     <div style={{ backgroundColor: '#f4f4f4' }}>
-      <div className={"ant-col-6"}>
-        <Image/>
-      </div>
-      <div style={{ paddingBottom: "70px" }}>
-        <div className={"ant-col-18"} style={{ textAlign:  "center", paddingLeft: "50px", paddingRight: "50px"}}>
-          <p style={{ marginTop: "70px"}}>
-            AnneForEvents, c’est Anne avec ses 20 ans d’expertise en organisation d’évènements, en
-            mise en place d’animations savamment choisies, au service des autres, pour l’enchantement,
-            pour le plaisir, pour la fidélisation.<br/>
-          </p>
-        </div>
-        <div style={{ textAlign: "center", fontWeight: "bold" }}>
-          <p>
-            Nous sommes à votre service pour l’organisation ou la fourniture d’animations, pour :<br/>
-          </p>
-        </div>
-        <div style={{ textAlign: "center" }}>
-          <p>
-            Vos fêtes familiales et amicales<br/>
-            Vos soirées associatives<br/>
-            La mise en lumière des fêtes organisées par les collectivités<br/>
-            La fidélisation de votre clientèle<br/>
-            …<br/>
-          </p>
-        </div>
-      </div>
+      <Row gutter={1}>
+        <Col className="gutter-row" span={6}>
+          <div>
+            <Image/>
+          </div>
+        </Col>
+        <Col className="gutter-row" span={18}>
+          <div style={{ paddingBottom: "70px" }}>
+            <div style={{ textAlign:  "center", paddingLeft: "50px", paddingRight: "50px"}}>
+              <p style={{ marginTop: "70px"}}>
+                AnneForEvents, c’est Anne avec ses 20 ans d’expertise en organisation d’évènements, en
+                mise en place d’animations savamment choisies, au service des autres, pour l’enchantement,
+                pour le plaisir, pour la fidélisation.<br/>
+              </p>
+            </div>
+            <div style={{ textAlign: "center", fontWeight: "bold" }}>
+              <p>
+                Nous sommes à votre service pour l’organisation ou la fourniture d’animations, pour :<br/>
+              </p>
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <p>
+                Vos fêtes familiales et amicales<br/>
+                Vos soirées associatives<br/>
+                La mise en lumière des fêtes organisées par les collectivités<br/>
+                La fidélisation de votre clientèle<br/>
+                …<br/>
+              </p>
+            </div>
+          </div>
+        </Col>
+      </Row>
     </div>
     <div>
       <br/>
