@@ -96,9 +96,6 @@ const { Text } = Typography;
             <Text type={"danger"}>Anne Dérozier</Text><br/>
             <Text type={"danger"}>Tel: 06.24.78.82.03</Text><br/>
             <Link to="/about">Contactez-moi</Link>
-            <br/>
-            <br/>
-            <Text type={"danger"}>@2019 Copyright</Text>
           </div>
         </div>
         <div style={{ paddingLeft: "2.5rem"}} className="ant-col-8">

@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql} from "gatsby"
-import { Carousel, Row, Col } from "antd"
+import { Carousel, Row, Col, Avatar } from "antd"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -60,30 +60,39 @@ const IndexPage = ({ data }) => (
       </Row>
     </div>
     <div>
-      <br/>
-      <div>
-        <p>
-          AnneForEvents est à votre écoute, AnneForEvents organise votre évènement et/ou vous
-          propose les animations et les décorations qui sont adaptées, sur toutes les thématiques, rien
-          n’est figé, tout est en mouvement et sur-mesure car il s’agit de faire rayonner un moment,
-          un événement unique.<br/>
-        </p>
-      </div>
-      <div>
-        <p>
-          Vous vous apprêtez à construire votre événement, à votre image, vivant, convivial,
-          interactif ? AnneForEvents met son talent à votre service parce que ce n’est pas n’importe
-          quel moment, n’importe quel événement, c’est le vôtre ! Il doit être extraordinaire et rester
-          merveilleusement gravé dans les mémoires.
-        </p>
-      </div>
-      <br/>
-      <div>
-        <p>
-          AnneForEvents intervient, en France, en Suisse, à Monaco … Le plus simple est de nous
-          consulter.<br/>
-        </p>
-      </div>
+    <Row gutter={1}>
+        <Col className="gutter-row" span={18}>
+          <div style={{ paddingBottom: "70px", paddingLeft: "50px", paddingRight: "50px" }}>
+            <div style={{ textAlign:  "center", paddingLeft: "50px", paddingRight: "50px"}}>
+              <p style={{ marginTop: "70px"}}>
+                AnneForEvents est à votre écoute, AnneForEvents organise votre évènement et/ou vous
+                propose les animations et les décorations qui sont adaptées, sur toutes les thématiques, rien
+                n’est figé, tout est en mouvement et sur-mesure car il s’agit de faire rayonner un moment,
+                un événement unique.<br/>
+              </p>
+            </div>
+            <div style={{ textAlign: "center" }}>
+              <p>
+                Vous vous apprêtez à construire votre événement, à votre image, vivant, convivial,
+                interactif ? AnneForEvents met son talent à votre service parce que ce n’est pas n’importe
+                quel moment, n’importe quel événement, c’est le vôtre ! Il doit être extraordinaire et rester
+                merveilleusement gravé dans les mémoires.
+              </p>
+            </div>
+          </div>
+        </Col>
+        <Col className="gutter-row" span={6} order>
+          <div style={{ textAlign: "center", paddingTop: "10%" }}>
+            <Avatar size={250} src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.artdesfleurs.fr%2Fwp-content%2Fuploads%2F2014%2F10%2Fbandeau-accueil-fleuriste-evenementiel-960x360.jpg&f=1" />
+          </div>
+        </Col>
+      </Row>
+    </div>
+    <div style={{ textAlign: "center" }}>
+      <p>
+        AnneForEvents intervient, en France, en Suisse, à Monaco … Le plus simple est de nous
+        consulter.<br/>
+      </p>
     </div>
   </Layout>
 )
