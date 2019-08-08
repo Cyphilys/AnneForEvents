@@ -83,7 +83,7 @@ const { Text } = Typography;
           <LittleMenu/>
         </div>
       </Header>
-      <Content style={{ marginTop: '60px' }}>
+      <Content style={{ marginTop: '80px' }}>
         <div style={{ background: '#fff', minHeight: 280 }}>{children}</div>
       </Content>
       <Footer style={{ background: '#313131'}}>
