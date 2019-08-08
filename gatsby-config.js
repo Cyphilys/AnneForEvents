@@ -3,9 +3,8 @@ module.exports = {
     title: `AnneForEvents`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `Mickaël Kerkhove`,
-    pdg: `Anne-Marie Dérozier`,
-    bio: `PDG de la société AnneForEvents. 
-          AnneForEvents est une agence à taille humaine, née de la volonté de sa créatrice de mettre
+    pdg: `Anne Dérozier`,
+    bio: `AnneForEvents est une agence à taille humaine, née de la volonté de sa créatrice de mettre
           au service de nos clients 20 ans d’expérience en organisation d'événements.`,
     pdgImage: `https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fimage-uniservice.copainsdavant.com%2Fimage%2F450%2F5%2F1534398814%2F9455350.jpg&f=1`,
     image: "./images/logo-afe.svg"

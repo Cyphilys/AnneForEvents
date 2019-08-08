@@ -93,7 +93,7 @@ const { Text } = Typography;
           </div>
           <br/>
           <div>
-            <Text type={"danger"}>Anne-Marie Dérozier</Text><br/>
+            <Text type={"danger"}>Anne Dérozier</Text><br/>
             <Text type={"danger"}>Tel: 06.24.78.82.03</Text><br/>
             <Link to="/about">Contactez-moi</Link>
             <br/>

@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => (
     </Carousel>
     <div style={{ backgroundColor: '#f4f4f4' }}>
       <Row gutter={1}>
-        <Col className="gutter-row" span={6}>
+        <Col className="gutter-row" span={6} order>
           <div>
             <Image/>
           </div>
