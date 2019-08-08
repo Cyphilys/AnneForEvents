@@ -4,6 +4,8 @@ import { Drawer, Button, Icon, Menu } from 'antd';
 import Logo from "../components/logo"
 import { Link } from "gatsby"
 
+const { SubMenu } = Menu;
+
 export default class LittleMenu extends React.Component {
   state = { visible: false };
 
@@ -37,8 +39,7 @@ export default class LittleMenu extends React.Component {
           <br/>
           <Menu
             theme="light"
-            mode="horizontal"
-            defaultSelectedKeys={[1]}
+            mode="vertical"
             style={{ lineHeight: '64px', fontSize: '16px', textAlign: 'right' }}
           >
             <Menu.Item key="1" >
@@ -50,10 +51,10 @@ export default class LittleMenu extends React.Component {
             <Menu.Item key="3">
               <Link to="/" />
               Location animaux</Menu.Item>
-           {/* <SubMenu
+            <SubMenu
               title={
                 <span className="submenu-title-wrapper">
-                Notre expertise - Vos projets
+                Vos projets
               </span>
               }
             >
@@ -65,7 +66,7 @@ export default class LittleMenu extends React.Component {
                 <Menu.Item key="8" style={{ fontSize: '16px' }}>Vous êtes une entreprise</Menu.Item>
                 <Menu.Item key="9" style={{ fontSize: '16px' }}>Vous êtes un centre commercial</Menu.Item>
               </Menu.ItemGroup>
-            </SubMenu>*/}
+            </SubMenu>
             <Menu.Item key="10">
               <Link to="/about" />
               Qui sommes nous ?</Menu.Item>
@@ -75,4 +76,3 @@ export default class LittleMenu extends React.Component {
     );
   }
 }
-
