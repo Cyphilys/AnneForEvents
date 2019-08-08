@@ -9,11 +9,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql, Link } from "gatsby"
 
-//import Header from "./header"
-//import "./layout.css"
-
 import { Layout, Menu, Icon, Typography } from "antd"
+
+import "../css/global.css"
+
 import Logo from "../components/logo"
+import LittleMenu from "./menu-mobile"
 
 const { Header, Content, Footer } = Layout
 const { SubMenu } = Menu;
@@ -30,7 +31,7 @@ const Glayout = ({ children, page }) => {
     }
   `)
 
-const { Text, Title } = Typography;
+const { Text } = Typography;
 
   return (
     <Layout style={{ minHeight: '100vh', background: "rgb(255, 255, 255)" }}>
@@ -41,7 +42,7 @@ const { Text, Title } = Typography;
               <Logo/></Link>
           </a>
         </div>
-        <div className="ant-col-18 ">
+        <div className="ant-col-18 highscreen">
           <Menu
             theme="light"
             mode="horizontal"
@@ -77,6 +78,9 @@ const { Text, Title } = Typography;
               <Link to="/about" />
               Qui sommes nous ?</Menu.Item>
           </Menu>
+        </div>
+        <div className="ant-col-18 mobile">
+          <LittleMenu/>
         </div>
       </Header>
       <Content style={{ marginTop: '60px',marginLeft: "50px", marginRight: "50px" }}>
