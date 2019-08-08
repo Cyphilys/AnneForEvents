@@ -83,8 +83,8 @@ const { Text } = Typography;
           <LittleMenu/>
         </div>
       </Header>
-      <Content style={{ marginTop: '60px',marginLeft: "50px", marginRight: "50px" }}>
-        <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>{children}</div>
+      <Content style={{ marginTop: '60px' }}>
+        <div style={{ background: '#fff', minHeight: 280 }}>{children}</div>
       </Content>
       <Footer style={{ background: '#313131'}}>
         <div style={{ paddingLeft: "2.5rem"}} className="ant-col-8">

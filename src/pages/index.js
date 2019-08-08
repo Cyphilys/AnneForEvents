@@ -10,21 +10,23 @@ const IndexPage = ({ data }) => (
     <SEO title="Accueil" />
     <p style={{fontStyle: "italic", textAlign: "center"}}>"Ce qui touche le cœur se grave dans la mémoire."<br/>
     - Voltaire</p>
-    <Carousel autoplay effect="fade">
-      <div>
-        <img src="https://www.mariage.com/prestataire-mariage/wp-content/uploads/sites/2/2015/10/21-05-481.jpg" height="auto" width="100%" alt="HTML5 Doctor Logo" />
-      </div>
-      <div>
-        <img src="http://carre-premium.com/wp-content/uploads/2016/10/evenementiel-marrakech.jpg" height="auto" width="100%"/>
-      </div>
-      <div>
-        <img src="https://i.ytimg.com/vi/CbjGdq5V1F4/maxresdefault.jpg" height="auto" width="100%"/>
-      </div>
-      <div>
-        <img src="http://www.oasiria.com/wp-content/uploads/2016/02/photo-evenementiel-1.jpg" height="auto" width="100%"/>
-      </div>
-    </Carousel>
-    <div style={{ marginBottom: `1.45rem` }}>
+    <div style={{ marginLeft: "60px", marginRight: "60px" }}>
+      <Carousel autoplay effect="fade">
+        <div>
+          <img src="https://www.mariage.com/prestataire-mariage/wp-content/uploads/sites/2/2015/10/21-05-481.jpg" height="auto" width="100%" alt="HTML5 Doctor Logo" />
+        </div>
+        <div>
+          <img src="http://carre-premium.com/wp-content/uploads/2016/10/evenementiel-marrakech.jpg" height="auto" width="100%"/>
+        </div>
+        <div>
+          <img src="https://i.ytimg.com/vi/CbjGdq5V1F4/maxresdefault.jpg" height="auto" width="100%"/>
+        </div>
+        <div>
+          <img src="http://www.oasiria.com/wp-content/uploads/2016/02/photo-evenementiel-1.jpg" height="auto" width="100%"/>
+        </div>
+      </Carousel>
+    </div>
+    <div style={{ marginBottom: `1.45rem`, backgroundColor: '#f4f4f4' }}>
       <p>
         AnneForEvents, c’est Anne avec ses 20 ans d’expertise en organisation d’évènements, en
         mise en place d’animations savamment choisies, au service des autres, pour l’enchantement,
