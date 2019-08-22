@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
 
+
 const IndexPage = ({ data }) => (
   <Layout page='1'>
     <SEO title="Accueil" />
@@ -13,7 +14,7 @@ const IndexPage = ({ data }) => (
     - Voltaire</p>
     <Carousel autoplay effect="fade">
       <div>
-        <img src="https://www.mariage.com/prestataire-mariage/wp-content/uploads/sites/2/2015/10/21-05-481.jpg" height="auto" width="100%" alt="HTML5 Doctor Logo" />
+        <img src="https://i.ibb.co/D7bTL2R/Ratons-Laveurs3.jpg" height="auto" width="100%" alt="Ratons-laveurs" />
       </div>
       <div>
         <img src="http://carre-premium.com/wp-content/uploads/2016/10/evenementiel-marrakech.jpg" height="auto" width="100%"/>
