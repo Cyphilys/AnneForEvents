@@ -21,7 +21,7 @@ const Bio = () => (
     render={data => (
       <>
         <Divider>Qui sommes-nous ?</Divider>
-        <List.Item>
+        <List.Item style={{paddingLeft: "50px", paddingRight: "50px"}}>
           <List.Item.Meta
             avatar={
               <Avatar
