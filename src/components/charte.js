@@ -37,6 +37,7 @@ export default class Charte extends React.Component {
           onOk={this.handleOk}
           onCancel={this.handleCancel}
           footer={null}
+          width={720}
         >
           <p>Dans le cadre des projets de ses clients, AnneForEvents peut proposer l’intervention d’animaux dans ses
             prestations, ses spectacles, ses ateliers pédagogiques et Eco Responsables.</p>
@@ -44,8 +45,9 @@ export default class Charte extends React.Component {
             soigneurs, respectés et bien traités y compris lorsqu’ils interviennent en prestation.</p>
           <p>Pour ce faire et bien que AnneForEvents fasse le maximum pour répondre au mieux à la demande de ses
             clients, nous effectuons une rigoureuse sélection sur de nombreux points :<br/>
+            <br/>
             . Auprès des soigneurs qui globalement doivent avoir le même type d’autorisation qu’un parc animalier
-            ou un zoo :<br/>
+            ou un zoo :<br/><br/>
             - Ils doivent être professionnels et selon l’animal ils doivent être capacitaires,<br/>
             - Ils doivent être en possession de tous les documents officiels administratifs pour leurs animaux et
             pour eux,<br/>
@@ -56,9 +58,9 @@ export default class Charte extends React.Component {
             AnneForEvents,<br/>
             - Nous vérifions le moyen et la qualité de l’équipement de transport des animaux,<br/>
             - Nous vérifions que son espace de vie quotidien soit bien adapté à sa nature (respect, confort de
-            l’animal…).<br/>
+            l’animal…).<br/><br/>
             . Auprès de ses clients qui peuvent être des professionnels (cinéma, clip, publicité…), des administrations,
-            des commerçants et quelquefois des particuliers :<br/>
+            des commerçants et quelquefois des particuliers :<br/><br/>
             - Nous ne retenons absolument aucune demande excentrique qui mettrait l’animal dans une position
             irrespectueuse, inconfortable, malveillante que ce soit au cours d’une prestation demandée ou sur
             des photos ou des vidéos.<br/>
