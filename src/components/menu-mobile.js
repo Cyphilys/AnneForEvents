@@ -46,7 +46,7 @@ export default class LittleMenu extends React.Component {
               <Link to="/" />
               Accueil</Menu.Item>
             <Menu.Item key="2">
-              <Link to="/page-2" />
+              <Link to="/prestations" />
               Prestations artistiques</Menu.Item>
             <Menu.Item key="3">
               <Link to="/" />
