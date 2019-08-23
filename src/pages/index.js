@@ -5,6 +5,7 @@ import { Carousel, Row, Col, Avatar } from "antd"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
+import Circle from "../components/circleindex"
 
 
 const IndexPage = ({ data }) => (
@@ -14,16 +15,16 @@ const IndexPage = ({ data }) => (
     - Voltaire</p>
     <Carousel autoplay effect="fade">
       <div>
-        <img src="https://i.ibb.co/D7bTL2R/Ratons-Laveurs3.jpg" height="auto" width="100%" alt="Ratons-laveurs" />
+        <img src="https://i.ibb.co/Vv9Ft3w/Animation-Night-Robot-Laser2.jpg" height="auto" width="100%" alt="Animation-RobotLaser" />
       </div>
       <div>
-        <img src="http://carre-premium.com/wp-content/uploads/2016/10/evenementiel-marrakech.jpg" height="auto" width="100%"/>
+        <img src="https://i.ibb.co/5xxwWCG/Animation-Animali-re-Chevaux-caleche-champetre.jpg" alt="Animation-Animaliere-Chevaux-caleche-champetre" height="auto" width="100%"/>
       </div>
       <div>
-        <img src="https://i.ytimg.com/vi/CbjGdq5V1F4/maxresdefault.jpg" height="auto" width="100%"/>
+        <img src="https://i.ibb.co/s2NdqW0/Animation-Animali-re-Fauconnerie.jpg" alt="Animation-fauconnerie" height="auto" width="100%"/>
       </div>
       <div>
-        <img src="http://www.oasiria.com/wp-content/uploads/2016/02/photo-evenementiel-1.jpg" height="auto" width="100%"/>
+        <img src="https://i.ibb.co/nDD8bY6/Animation-Man-ge-Animaux-Electrique2.jpg" alt="Animation-manege-enfant" height="auto" width="100%"/>
       </div>
     </Carousel>
     <div style={{ backgroundColor: '#f4f4f4' }}>
@@ -61,10 +62,10 @@ const IndexPage = ({ data }) => (
       </Row>
     </div>
     <div>
-    <Row gutter={1}>
-        <Col className="gutter-row" span={18}>
-          <div style={{ paddingBottom: "70px", paddingLeft: "50px", paddingRight: "50px" }}>
-            <div style={{ textAlign:  "center", paddingLeft: "50px", paddingRight: "50px"}}>
+    <Row>
+        <Col span={14}>
+          <div style={{ paddingBottom: "70px", paddingLeft: "50px", paddingRight: "50px"}}>
+            <div style={{ textAlign:  "center"}}>
               <p style={{ marginTop: "70px"}}>
                 AnneForEvents est à votre écoute, AnneForEvents organise votre évènement et/ou vous
                 propose les animations et les décorations qui sont adaptées, sur toutes les thématiques, rien
@@ -72,7 +73,7 @@ const IndexPage = ({ data }) => (
                 un événement unique.<br/>
               </p>
             </div>
-            <div style={{ textAlign: "center" }}>
+            <div style={{ textAlign: "center"}}>
               <p>
                 Vous vous apprêtez à construire votre événement, à votre image, vivant, convivial,
                 interactif ? AnneForEvents met son talent à votre service parce que ce n’est pas n’importe
@@ -82,9 +83,11 @@ const IndexPage = ({ data }) => (
             </div>
           </div>
         </Col>
-        <Col className="gutter-row" span={6} order>
-          <div style={{ textAlign: "center", paddingTop: "10%" }}>
-            <Avatar size={250} src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.artdesfleurs.fr%2Fwp-content%2Fuploads%2F2014%2F10%2Fbandeau-accueil-fleuriste-evenementiel-960x360.jpg&f=1" />
+        <Col span={10}>
+          <div style={{paddingTop: "5%", paddingLeft: "50px", paddingRight: "50px"}}>
+            <div style={{borderRadius: "50%", overflow: "hidden"}}>
+              <Circle/>
+            </div>
           </div>
         </Col>
       </Row>

@@ -89,40 +89,48 @@ const { Text } = Typography;
         <div style={{ background: '#fff', minHeight: 280 }}>{children}</div>
       </Content>
       <Footer style={{ background: '#313131'}}>
-        <div style={{ paddingLeft: "2.5rem"}} className="ant-col-8">
-          <div>
-            <Text strong type={"danger"}>Contact</Text>
-          </div>
-          <br/>
-          <div>
-            <Text type={"danger"}>Anne Dérozier</Text><br/>
-            <Text type={"danger"}>Tel: 06.24.78.82.03</Text><br/>
-            <Link to="/about">Contactez-moi</Link>
-          </div>
-        </div>
-        <div style={{ paddingLeft: "2.5rem"}} className="ant-col-8">
-          <div>
-            <Text strong type={"danger"}>Liens</Text>
-          </div>
-          <br/>
-          <div>
-            <Text type={"danger"}><Link to="/">Accueil</Link></Text><br/>
-            <Text type={"danger"}><Link to="/">Prestations artistiques</Link></Text><br/>
-            <Text type={"danger"}><Link to="/">Location animaux</Link></Text><br/>
-            <Text type={"danger"}><Link to="/about">Qui sommes-nous ?</Link></Text><br/>
-          </div>
-        </div>
-        <div style={{ paddingLeft: "2.5rem"}} className="ant-col-8">
-          <div>
-            <Text strong type={"danger"}>Réseaux sociaux</Text>
-          </div>
-          <br/>
-          <div>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><Icon type="facebook" theme="filled" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/></a>
-            <a href="https://www.instagram.com/?hl=fr" target="_blank" rel="noopener noreferrer"><Icon type="instagram" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/></a>
-            <a href="https://twitter.com/?lang=fr" target="_blank" rel="noopener noreferrer"><Icon type="twitter" style={{ fontSize: '35px', color: '#009ACD'}}/></a>
-          </div>
-        </div>
+        <Row>
+          <Col span={8}>
+            <div style={{ textAlign: "center"}}>
+              <div>
+                <Text strong type={"danger"}>Contact</Text>
+              </div>
+              <br/>
+              <div>
+                <Text type={"danger"}>Anne Dérozier</Text><br/>
+                <Text type={"danger"}>Tel: 06.24.78.82.03</Text><br/>
+                <Link to="/about">Contactez-moi</Link>
+              </div>
+            </div>
+          </Col>
+          <Col span={8}>
+            <div style={{ textAlign: "center"}}>
+              <div>
+                <Text strong type={"danger"}>Liens</Text>
+              </div>
+              <br/>
+              <div>
+                <Text type={"danger"}><Link to="/">Accueil</Link></Text><br/>
+                <Text type={"danger"}><Link to="/">Prestations artistiques</Link></Text><br/>
+                <Text type={"danger"}><Link to="/">Location animaux</Link></Text><br/>
+                <Text type={"danger"}><Link to="/about">Qui sommes-nous ?</Link></Text><br/>
+              </div>
+            </div>
+          </Col>
+          <Col span={8}>
+            <div style={{ textAlign: "center"}}>
+              <div>
+                <Text strong type={"danger"}>Réseaux sociaux</Text>
+              </div>
+              <br/>
+              <div>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><Icon type="facebook" theme="filled" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/></a>
+                <a href="https://www.instagram.com/?hl=fr" target="_blank" rel="noopener noreferrer"><Icon type="instagram" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/></a>
+                <a href="https://twitter.com/?lang=fr" target="_blank" rel="noopener noreferrer"><Icon type="twitter" style={{ fontSize: '35px', color: '#009ACD'}}/></a>
+              </div>
+            </div>
+          </Col>
+        </Row>
       </Footer>
     </Layout>
   )
