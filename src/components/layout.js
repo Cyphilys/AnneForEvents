@@ -34,7 +34,7 @@ const Glayout = ({ children, page }) => {
 const { Text } = Typography;
 
   return (
-    <Layout style={{ minHeight: '100vh', background: "rgb(255, 255, 255)" }}>
+    <Layout style={{ background: "rgb(255, 255, 255)" }}>
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%', background: '#FFF' }}>
         <Row type="flex" justify="space-between">
           <Col>
@@ -88,7 +88,7 @@ const { Text } = Typography;
       <Content style={{ marginTop: '80px' }}>
         <div style={{ background: '#fff', minHeight: 280 }}>{children}</div>
       </Content>
-      <Footer style={{ background: '#313131'}}>
+      <Footer style={{ background: '#313131', bottom: "0"}}>
         <Row>
           <Col span={8}>
             <div style={{ textAlign: "center"}}>
@@ -111,7 +111,7 @@ const { Text } = Typography;
               <br/>
               <div>
                 <Text type={"danger"}><Link to="/">Accueil</Link></Text><br/>
-                <Text type={"danger"}><Link to="/">Prestations artistiques</Link></Text><br/>
+                <Text type={"danger"}><Link to="/prestations">Prestations artistiques</Link></Text><br/>
                 <Text type={"danger"}><Link to="/">Location animaux</Link></Text><br/>
                 <Text type={"danger"}><Link to="/about">Qui sommes-nous ?</Link></Text><br/>
               </div>
