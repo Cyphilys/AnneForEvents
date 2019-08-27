@@ -56,7 +56,7 @@ const CollectionCreateForm = Form.create({ name: 'form_in_modal' })(
             <Form.Item>
               {getFieldDecorator('bot-field', {
                 rules: [{ required: false, message: "Merci de ne rien mettre ici"}],
-              })(<Input type="hidden"/>)}
+              })(<Input type="hidden" value="contact"/>)}
             </Form.Item>
             <Form.Item label="Type d’évènement :" >
               {getFieldDecorator('Type', {
