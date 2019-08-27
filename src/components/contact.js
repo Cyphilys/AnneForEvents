@@ -52,7 +52,7 @@ const CollectionCreateForm = Form.create({ name: 'form_in_modal' })(
           onCancel={onCancel}
           onOk={onCreate}
         >
-          <Form layout="vertical">
+          <Form layout="vertical" netlify>
             <Form.Item label="Type d’évènement :" >
               {getFieldDecorator('Type', {
                 rules: [{ required: true, message: "Merci d'indiquer le type d'événement !"}],
