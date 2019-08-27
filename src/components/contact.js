@@ -54,7 +54,9 @@ const CollectionCreateForm = Form.create({ name: 'form_in_modal' })(
         >
           <Form layout="vertical" data-netlify="true" netlify-honeypot="bot-field">
             <Form.Item>
-              <Input type="hidden" name="bot-field"/>
+              {getFieldDecorator('bot-field', {
+                rules: [{ required: false, message: "Merci de ne rien mettre ici"}],
+              })(<Input type="hidden"/>)}
             </Form.Item>
             <Form.Item label="Type d’évènement :" >
               {getFieldDecorator('Type', {
