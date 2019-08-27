@@ -52,7 +52,7 @@ const CollectionCreateForm = Form.create({ name: 'form_in_modal' })(
           onCancel={onCancel}
           onOk={onCreate}
         >
-          <Form layout="vertical" data-netlify="true" netlify-honeypot="bot-field">
+          <Form name="contact" layout="vertical" data-netlify="true" netlify-honeypot="bot-field">
             <Form.Item>
               {getFieldDecorator('bot-field', {
                 rules: [{ required: false, message: "Merci de ne rien mettre ici"}],
