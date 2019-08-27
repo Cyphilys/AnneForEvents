@@ -3,7 +3,7 @@ import React from "react"
 import { Modal, Button, Form, Input, Divider, Radio, DatePicker, InputNumber, Select } from 'antd';
 
 const CollectionCreateForm = Form.create({ name: 'form_in_modal' })(
-  // eslint-disable-next-line
+
   class extends React.Component {
 
     state = {
@@ -52,7 +52,7 @@ const CollectionCreateForm = Form.create({ name: 'form_in_modal' })(
           onCancel={onCancel}
           onOk={onCreate}
         >
-          <Form name="contact" layout="vertical" data-netlify="true" netlify-honeypot="bot-field">
+          <Form name="contact" method="POST" layout="vertical" data-netlify="true" netlify-honeypot="bot-field">
             <Form.Item>
               {getFieldDecorator('bot-field', {
                 rules: [{ required: false, message: "Merci de ne rien mettre ici"}],
