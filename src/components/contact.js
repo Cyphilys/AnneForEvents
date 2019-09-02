@@ -2,6 +2,7 @@ import React from "react"
 
 import { Modal, Button, Form, Input, Divider, Radio, DatePicker, InputNumber, Select } from 'antd';
 
+
 const CollectionCreateForm = Form.create({ name: 'form_in_modal' })(
 
   class extends React.Component {
@@ -52,12 +53,7 @@ const CollectionCreateForm = Form.create({ name: 'form_in_modal' })(
           onCancel={onCancel}
           onOk={onCreate}
         >
-          <Form name="contact" method="POST" layout="vertical" data-netlify="true" netlify-honeypot="bot-field">
-            <Form.Item>
-              {getFieldDecorator('bot-field', {
-                rules: [{ required: false, message: "Merci de ne rien mettre ici"}],
-              })(<Input type="hidden" value="contact"/>)}
-            </Form.Item>
+          <Form name="contact" method="POST" layout="vertical">
             <Form.Item label="Type d’évènement :" >
               {getFieldDecorator('Type', {
                 rules: [{ required: true, message: "Merci d'indiquer le type d'événement !"}],
@@ -148,11 +144,11 @@ export default class Contact extends React.Component {
 
   handleCreate = () => {
     const { form } = this.formRef.props;
+
     form.validateFields((err, values) => {
       if (err) {
         return;
       }
-
       console.log('Received values of form: ', values);
       form.resetFields();
       this.setState({ visible: false });

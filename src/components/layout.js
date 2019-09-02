@@ -57,7 +57,7 @@ const { Text } = Typography;
                 <Link to="/prestations" />
                 Prestations artistiques</Menu.Item>
               <Menu.Item key="3">
-                <Link to="/" />
+                <Link to="/Locations" />
                 Location animaux</Menu.Item>
               <SubMenu
                 title={
@@ -112,7 +112,7 @@ const { Text } = Typography;
               <div>
                 <Text type={"danger"}><Link to="/">Accueil</Link></Text><br/>
                 <Text type={"danger"}><Link to="/prestations">Prestations artistiques</Link></Text><br/>
-                <Text type={"danger"}><Link to="/">Location animaux</Link></Text><br/>
+                <Text type={"danger"}><Link to="/Locations">Location animaux</Link></Text><br/>
                 <Text type={"danger"}><Link to="/about">Qui sommes-nous ?</Link></Text><br/>
               </div>
             </div>
