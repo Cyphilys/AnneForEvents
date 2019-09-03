@@ -67,12 +67,12 @@ const { Text } = Typography;
                 }
               >
                 <Menu.ItemGroup>
-                  <Menu.Item key="4" style={{ fontSize: '16px' }}>Vous êtes un particulier</Menu.Item>
-                  <Menu.Item key="5" style={{ fontSize: '16px' }}>Vous êtes une collectivité</Menu.Item>
-                  <Menu.Item key="6" style={{ fontSize: '16px' }}>Vous êtes organisateur de foires et salons</Menu.Item>
-                  <Menu.Item key="7" style={{ fontSize: '16px' }}>Vous êtes un comité d'entreprise</Menu.Item>
-                  <Menu.Item key="8" style={{ fontSize: '16px' }}>Vous êtes une entreprise</Menu.Item>
-                  <Menu.Item key="9" style={{ fontSize: '16px' }}>Vous êtes un centre commercial</Menu.Item>
+                  <Menu.Item key="4" style={{ fontSize: '16px' }}><Link to="/particulier" />Vous êtes un particulier</Menu.Item>
+                  <Menu.Item key="5" style={{ fontSize: '16px' }}><Link to="/collectivite" />Vous êtes une collectivité</Menu.Item>
+                  <Menu.Item key="6" style={{ fontSize: '16px' }}><Link to="/organisateur" />Vous êtes organisateur de foires et salons</Menu.Item>
+                  <Menu.Item key="7" style={{ fontSize: '16px' }}><Link to="/comite" />Vous êtes un comité d'entreprise</Menu.Item>
+                  <Menu.Item key="8" style={{ fontSize: '16px' }}><Link to="/entreprise" />Vous êtes une entreprise</Menu.Item>
+                  <Menu.Item key="9" style={{ fontSize: '16px' }}><Link to="/centre" />Vous êtes un centre commercial</Menu.Item>
                 </Menu.ItemGroup>
               </SubMenu>
               <Menu.Item key="10">
@@ -125,7 +125,7 @@ const { Text } = Typography;
               <br/>
               <div>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><Icon type="facebook" theme="filled" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/></a>
-                <a href="https://www.instagram.com/?hl=fr" target="_blank" rel="noopener noreferrer"><Icon type="instagram" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/></a>
+                <a href="https://www.instagram.com/anneforevents/" target="_blank" rel="noopener noreferrer"><Icon type="instagram" style={{ fontSize: '35px', color: '#009ACD', marginRight: '0.5rem'}}/></a>
                 <a href="https://twitter.com/?lang=fr" target="_blank" rel="noopener noreferrer"><Icon type="twitter" style={{ fontSize: '35px', color: '#009ACD'}}/></a>
               </div>
             </div>

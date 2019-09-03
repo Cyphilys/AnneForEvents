@@ -49,7 +49,7 @@ export default class LittleMenu extends React.Component {
               <Link to="/prestations" />
               Prestations artistiques</Menu.Item>
             <Menu.Item key="3">
-              <Link to="/" />
+              <Link to="/Location" />
               Location animaux</Menu.Item>
             <SubMenu
               title={
@@ -59,12 +59,12 @@ export default class LittleMenu extends React.Component {
               }
             >
               <Menu.ItemGroup>
-                <Menu.Item key="4" style={{ fontSize: '16px' }}>Vous êtes un particulier</Menu.Item>
-                <Menu.Item key="5" style={{ fontSize: '16px' }}>Vous êtes une collectivité</Menu.Item>
-                <Menu.Item key="6" style={{ fontSize: '16px' }}>Vous êtes organisateur de foires et salons</Menu.Item>
-                <Menu.Item key="7" style={{ fontSize: '16px' }}>Vous êtes un comité d'entreprise</Menu.Item>
-                <Menu.Item key="8" style={{ fontSize: '16px' }}>Vous êtes une entreprise</Menu.Item>
-                <Menu.Item key="9" style={{ fontSize: '16px' }}>Vous êtes un centre commercial</Menu.Item>
+                <Menu.Item key="4" style={{ fontSize: '16px' }}><Link to="/particulier" />Vous êtes un particulier</Menu.Item>
+                <Menu.Item key="5" style={{ fontSize: '16px' }}><Link to="/collectivite" />Vous êtes une collectivité</Menu.Item>
+                <Menu.Item key="6" style={{ fontSize: '16px' }}><Link to="/organisateur" />Vous êtes organisateur de foires et salons</Menu.Item>
+                <Menu.Item key="7" style={{ fontSize: '16px' }}><Link to="/comite" />Vous êtes un comité d'entreprise</Menu.Item>
+                <Menu.Item key="8" style={{ fontSize: '16px' }}><Link to="/entreprise" />Vous êtes une entreprise</Menu.Item>
+                <Menu.Item key="9" style={{ fontSize: '16px' }}><Link to="/centre" />Vous êtes un centre commercial</Menu.Item>
               </Menu.ItemGroup>
             </SubMenu>
             <Menu.Item key="10">
